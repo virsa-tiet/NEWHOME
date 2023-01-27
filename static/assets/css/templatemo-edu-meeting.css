@@ -1382,7 +1382,7 @@ color:white !important;
   border-bottom: 2px yellow solid ;
  }
 section.our-facts {
-  background-image: url(../Pictures/vid.jpg);
+  /* background-image: url(../Pictures/vid.jpg); */
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
