@@ -794,6 +794,7 @@ banner
   object-fit: cover;
   z-index: -1;
   margin-top: 80px;
+  opacity: 0.5;
 }
 
 #bg-video::-webkit-media-controls {
@@ -1382,7 +1383,7 @@ color:white !important;
   border-bottom: 2px yellow solid ;
  }
 section.our-facts {
-  /* background-image: url(../Pictures/vid.jpg); */
+  background-image: url(https://imageshack.com/i/poEFTIf7j);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
