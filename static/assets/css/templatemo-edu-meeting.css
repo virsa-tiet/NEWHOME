@@ -1829,6 +1829,7 @@ responsive
 ---------------------------------------------
 */
 
+
 @media (max-width: 1300px) {
   .services .owl-nav .owl-next {
     right: -30px;
@@ -1841,6 +1842,11 @@ responsive
   }
   .our-courses .owl-nav .owl-prev {
     left: -25px;
+  }
+  .main-banner .caption h2 {
+    margin-top: -300px;
+    margin-bottom: 10px;
+    font-size: 22px;
   }
 }
 
@@ -1857,6 +1863,11 @@ responsive
   .our-courses .owl-nav .owl-prev {
     left: -65px;
   }
+  .main-banner .caption h2 {
+    margin-top: -300px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 1085px) {
@@ -1871,6 +1882,11 @@ responsive
   }
   .our-courses .owl-nav .owl-prev {
     left: -25px;
+  }
+  .main-banner .caption h2 {
+    margin-top: -300px;
+    margin-bottom: 10px;
+    font-size: 22px;
   }
 }
 
@@ -1887,6 +1903,11 @@ responsive
   .our-courses .owl-nav .owl-prev {
     display: none;
   }
+  .main-banner .caption h2 {
+    margin-top: -300px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1895,7 +1916,7 @@ responsive
   }
 
   .main-banner .caption h2 {
-    margin-top: 10px;
+    margin-top: -300px;
     margin-bottom: 10px;
     font-size: 22px;
   }
