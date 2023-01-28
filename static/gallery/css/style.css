@@ -431,22 +431,22 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
 
-.ring {
+/* .ring {
   position: absolute;
   top: 50%;
   left: 50%;
-  border-radius: 50%; }
+  border-radius: 50%; } */
 
-#saturn .ring {
+/* #saturn .ring {
   width: 2em;
   height: 2em;
   margin-top: -1em;
   margin-left: -1em;
   border: 0.3em solid rgba(160, 147, 130, 0.7);
   animation-iteration-count: infinite;
-  animation-timing-function: linear; }
+  animation-timing-function: linear; } */
 
-#saturn .ring:after {
+ /* #saturn .ring:after {
   border-radius: 50%;
   position: absolute;
   content: '';
@@ -458,7 +458,7 @@ body {
   margin-left: -1.1em;
   border: 0.07em solid rgba(160, 147, 130, 0.5);
   box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box; } */
 
 /* --------------------------------------------------------------------------- planets index */
 #mercury {
@@ -519,8 +519,8 @@ body {
 .view-3D .opening .pos,
 .view-3D .opening .planet,
 .view-3D .opening .satelite,
-.view-3D .opening .ring {
-  transition-duration: 4s; }
+/* .view-3D .opening .ring {
+  transition-duration: 4s; } */
 
 #universe.opening #sun {
   box-shadow: 0 0 0 rgba(255, 160, 60, 0); }
@@ -533,7 +533,7 @@ body {
   transform-style: flat; }
 
 .view-2D #sun,
-.view-2D .ring {
+*/  .view-2D .ring {
   transform: rotateX(0deg); }
 
 .view-2D .planet,
@@ -553,8 +553,8 @@ body {
 .view-3D #sun {
   transform: rotateX(-90deg); }
 
-.view-3D .ring {
-  transform: rotateX(90deg); }
+/* .view-3D .ring {
+  transform: rotateX(90deg); } */
 
 .view-3D .planet,
 .view-3D .moon {
@@ -612,7 +612,7 @@ body {
 .zoom-close .pos,
 .zoom-close .planet,
 .zoom-close .satelite,
-.zoom-close .ring {
+.zoom-close /*.ring*/ {
   animation-play-state: paused!important;
   animation-duration: 0s!important;
   animation: none!important; }
@@ -682,30 +682,30 @@ body {
 /* --------------------------------------------------------------------------- planets sizes */
 /* --------------------------------------------------------------------------- stretched sizes */
 .scale-stretched #sun {
-  font-size: 24em; }
+  font-size: 28em; }
 
 .scale-stretched #mercury .planet {
   font-size: 15em; }
 
 
 .scale-stretched #earth .planet {
-  font-size: 10em; }
+  font-size: 18em; }
 
 .scale-stretched #earth .moon {
-  font-size: 1.2em; }
+  font-size: 0em; }
 
 
 .scale-stretched #jupiter .planet {
-  font-size: 12em; }
+  font-size: 22em; }
 
 .scale-stretched #saturn .planet {
-  font-size: 10.8em; }
+  font-size: 19em; }
 
 .scale-stretched #uranus .planet {
-  font-size: 10em; }
+  font-size: 20em; }
 
 .scale-stretched #neptune .planet {
-  font-size: 9em; }
+  font-size: 18  em; }
 
 /* --------------------------------------------------------------------------- scaled sizes */
 /*
@@ -718,6 +718,7 @@ body {
 
 .scale-d #mercury .planet {
   font-size: 0.14634em; }
+  
 
 .scale-d #venus .planet {
   font-size: 0.36306em; }
@@ -1722,7 +1723,7 @@ body {
  }
 
 #sun {
-  background-image: url(Screenshot_20230113_230255.png); }
+  background-image: url(https://imageshack.com/i/pmegjd6Bj); }
 
 #mercury .planet {
   background-image: url(https://imageshack.com/i/pm8Y102mj) }
