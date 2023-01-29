@@ -637,7 +637,7 @@ body {
 #mercury .pos,
 #mercury .planet,
 #mercury.orbit {
-  animation-duration: 5s; }
+  animation-duration: 192s; }
 
 #venus .pos,
 #venus .planet,
@@ -677,7 +677,7 @@ body {
 #neptune .pos,
 #neptune .planet,
 #neptune.orbit {
-  animation-duration: 1977.49584s; }
+  animation-duration: 197.49584s; }
 
 /* --------------------------------------------------------------------------- planets sizes */
 /* --------------------------------------------------------------------------- stretched sizes */
@@ -685,7 +685,7 @@ body {
   font-size: 28em; }
 
 .scale-stretched #mercury .planet {
-  font-size: 15em; }
+  font-size: 18em; }
 
 
 .scale-stretched #earth .planet {
@@ -696,16 +696,16 @@ body {
 
 
 .scale-stretched #jupiter .planet {
-  font-size: 22em; }
+  font-size: 18em; }
 
 .scale-stretched #saturn .planet {
-  font-size: 19em; }
+  font-size: 18em; }
 
 .scale-stretched #uranus .planet {
-  font-size: 20em; }
+  font-size: 18em; }
 
 .scale-stretched #neptune .planet {
-  font-size: 18  em; }
+  font-size: 18em; }
 
 /* --------------------------------------------------------------------------- scaled sizes */
 /*
@@ -777,10 +777,10 @@ body {
 
 /* --------------------------------------------------------------------------- stretched orbits */
 .scale-stretched #mercury.orbit {
-  width: 32em;
-  height: 32em;
-  margin-top: -16em;
-  margin-left: -16em; }
+  width: 239em;
+  height: 230em;
+  margin-top: -110em;
+  margin-left: -116em; }
 
 .scale-stretched #venus.orbit {
   width: 40em;
@@ -946,13 +946,13 @@ body {
 /* --------------------------------------------------------------------------- text infos data */
 /* --------------------------------------------------------------------------- speed */
 .set-speed dl.infos dd span:after {
-  content: ''; }
+  content: 'Orbit Velocity'; }
 
 .set-speed #sun dl.infos dd:after {
   content: '0 km/h'; }
 
 .set-speed #mercury dl.infos dd:after {
-  content: '12,000+ crowd'; }
+  content: 'Mela content'; }
 
 .set-speed #venus dl.infos dd:after {
   content: '126,074 km/h'; }
