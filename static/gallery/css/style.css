@@ -946,13 +946,13 @@ body {
 /* --------------------------------------------------------------------------- text infos data */
 /* --------------------------------------------------------------------------- speed */
 .set-speed dl.infos dd span:after {
-  content: 'Orbit Velocity'; }
+  content: ''; }
 
 .set-speed #sun dl.infos dd:after {
   content: '0 km/h'; }
 
 .set-speed #mercury dl.infos dd:after {
-  content: 'Mela content'; }
+  content: '12,000+ crowd'; }
 
 .set-speed #venus dl.infos dd:after {
   content: '126,074 km/h'; }
