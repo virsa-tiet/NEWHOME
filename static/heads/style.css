@@ -66,7 +66,7 @@ section { min-height:600px; }
 }
 body{
   background: url("https://muskanpreet.github.io/Team2/5137894.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   text-align: center;
 }
