@@ -15,11 +15,7 @@ h1{
  
     
 }
-.honeycomb-cell_img:hover{
-    transform: scale(0.8);
-    border-radius: 20px;
-    box-shadow: 0 32px 75px rgba(68,77,136,0.2);
-}
+
 
 body{
     background-color: black;
@@ -54,9 +50,14 @@ body{
     text-align: center;
     z-index: 1;
     /*box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.1);*/
+    transition: 0.4s; 
 }
 .hell{
     margin-left: 45%;
+}
+.honeycomb-cell_img:hover{
+    transform: scale(0.8);
+ 
 }
 
 .honeycomb-cell_img
