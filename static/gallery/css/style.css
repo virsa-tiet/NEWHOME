@@ -637,7 +637,7 @@ body {
 #mercury .pos,
 #mercury .planet,
 #mercury.orbit {
-  animation-duration: 192s; }
+  animation-duration: 140s; }
 
 #venus .pos,
 #venus .planet,
@@ -946,34 +946,29 @@ body {
 /* --------------------------------------------------------------------------- text infos data */
 /* --------------------------------------------------------------------------- speed */
 .set-speed dl.infos dd span:after {
-  content: 'Orbit Velocity'; }
+  content: 'Crowd'; }
 
 .set-speed #sun dl.infos dd:after {
   content: '0 km/h'; }
 
 .set-speed #mercury dl.infos dd:after {
-  content: 'Mela content'; }
+  content: '12000+'; }
 
-.set-speed #venus dl.infos dd:after {
-  content: '126,074 km/h'; }
+
 
 .set-speed #earth dl.infos dd:after {
-  content: '107,218 km/h'; }
-
-.set-speed #mars dl.infos dd:after {
-  content: '86,677 km/h'; }
-
+  content: '6000+'; }
 .set-speed #jupiter dl.infos dd:after {
-  content: '47,002 km/h'; }
+  content: '8000+'; }
 
 .set-speed #saturn dl.infos dd:after {
-  content: '34,701 km/h'; }
+  content: '8000+'; }
 
 .set-speed #uranus dl.infos dd:after {
-  content: '24,477 km/h'; }
+  content: '1000+'; }
 
 .set-speed #neptune dl.infos dd:after {
-  content: '19,566 km/h'; }
+  content: '1000+'; }
 
 /* --------------------------------------------------------------------------- size */
 .set-size dl.infos dd span:after {
