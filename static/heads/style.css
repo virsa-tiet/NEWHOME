@@ -150,35 +150,23 @@
   border-radius: 10px;
   }
   .team-coverflow1 {
-      /* position: relative;
-      overflow: hidden; */
-      /* padding: 15px; */
+
       width: 100%;
       max-width: 300px;
       height: auto;
       margin-left: 340px;
       margin-right: 0px;
-      /* background: rgba( 255, 255, 255, 0.25 ); */
-  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px; */
+
   }
   .team-coverflow2 {
-      /* position: relative; */
-      /* overflow: hidden; */
-      /* padding: 15px; */
+
       width: 100%;
       max-width: 300px;
       height: auto;
-      margin-left: 340px;
+      margin-left: 300px;
       margin-right: 0px;
   
-      /* background: rgba( 255, 255, 255, 0.25 ); */
-  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px; */
+
   }
   .team-coverflow .team-text{
       text-align: center;
