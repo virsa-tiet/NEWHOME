@@ -882,9 +882,11 @@ services
   border-radius: 20px;
   text-align: center;
   color: #fff;
-  padding: 25px ;
+  padding: 15px ;
 }
-
+.icon img {
+  border-radius: 15px;
+}
 .services .item .icon {
   max-width: 500px;
   margin: 0 auto;
