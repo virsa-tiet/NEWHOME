@@ -153,7 +153,7 @@
 
       width: 100%;
       max-width: 300px;
-      height: auto;
+      /* height: auto; */
       margin-left: 340px;
       margin-right: 0px;
 
@@ -161,8 +161,8 @@
   .team-coverflow2 {
 
       width: 100%;
-      max-width: 260px;
-      height: auto;
+      max-width: 300px;
+      /* height: auto; */
       margin-left: 300px;
       margin-right: 0px;
   
