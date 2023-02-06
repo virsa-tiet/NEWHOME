@@ -337,11 +337,16 @@
 
 
 <script>
-  function cb(response) {
-      document.getElementById('visits').innerText = response.value;
+  const countE1 = document.getElementById("count");
+  countvisits();
+  function countvisits(){
+    fetch('https://api.countapi.xyz/update/ssavirsa.com/virsa/?amount=1')
+    .then((res)=>res.json())
+    .then((res)=>{
+      countE1.innerHTML=res.value;
+    })
   }
-  </script>
-  <script async src="https://api.countapi.xyz/hit/mysite.com/visits?callback=cb"></script>
+ </script>
 
 
 
