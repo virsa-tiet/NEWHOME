@@ -206,9 +206,10 @@ li a {
 @media only screen and (min-width: 955px){
   .heading{
     position:absolute;
-    top: 30%;
-    left:37%;
+    top: 31%;
+    left:41.5%;
   }
+  
   .ending{
     text-align: center;
   }
