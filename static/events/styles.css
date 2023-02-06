@@ -104,12 +104,15 @@ li a {
 
 .name {
   text-align: center;
+  margin: auto;
   margin-top: 70px;
   margin-bottom: 5px;
+  
 }
 
 .content {
   margin: 0 170px 50px 170px;
+  
   text-align: center;
 
 }
