@@ -419,6 +419,8 @@
       </p>
     </div>
   </section>
+      
+      
   <script>
     const countE1 = document.getElementById("count");
     countvisits();
@@ -427,8 +429,10 @@
       .then((res)=>res.json())
       .then((res)=>{
         countE1.innerHTML=res.value;
+
       })
     }
+    
    </script>
   <!-- Bootstrap core JavaScript -->
     <script src="static/vendor/jquery/jquery.min.js"></script>

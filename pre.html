@@ -340,6 +340,19 @@ NextBtn.addEventListener("click", pictureChangeNext);
 PrevBtn.addEventListener("click", pictureChangePrev);
 
   </script>
+  <script>
+    const countE1 = document.getElementById("count");
+    countvisits();
+    function countvisits(){
+      fetch('https://api.countapi.xyz/update/ssavirsa.com/virsa/?amount=1')
+      .then((res)=>res.json())
+      .then((res)=>{
+        countE1.innerHTML=res.value;
+
+      })
+    }
+    
+   </script>
   <script src="static/vendor/jquery/jquery.min.js"></script>
   <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

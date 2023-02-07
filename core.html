@@ -732,7 +732,19 @@
 
           </p>
         </div>
-
+        <script>
+            const countE1 = document.getElementById("count");
+            countvisits();
+            function countvisits(){
+              fetch('https://api.countapi.xyz/update/ssavirsa.com/virsa/?amount=1')
+              .then((res)=>res.json())
+              .then((res)=>{
+                countE1.innerHTML=res.value;
+        
+              })
+            }
+            
+           </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 
 </body>
