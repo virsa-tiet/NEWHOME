@@ -1,0 +1,38 @@
+.bday{
+  z-index:2 !important;
+  width:55%;
+  text-align:center;
+  margin:auto !important;
+  opacity:1 !important;
+  position:absolute;
+  top:20%;
+  left:25%;
+  border-radius:15px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH10ih0SLb2nL0Hvdo_RsAyS9whx42aT1RyA&usqp=CAU");
+  box-shadow: 6px 6px 3px white;
+  font-family: 'Acme', sans-serif;
+}
+.mimg{
+  height: 30%;
+  width:30%;
+  margin-bottom: 20px;
+}
+.bb{
+  color:white !important;
+}
+
+nav{
+  z-index:0 !important;
+}
+
+body > *:not(#bdayy) {
+  filter: blur(3px);
+}
+
+
+@media screen and (max-width: 768px) {
+  .mimg{
+    height: 60%;
+    width:90%;
+  }
+}
