@@ -36,6 +36,7 @@
       display: block !important;
     }
   }
+
 </style>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
@@ -63,9 +64,12 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <!-- <li class="nav-item kk" >
-              <a class="nav-link " aria-current="page" href="http://recruitment.ssavirsa.com/"><button class="btn btn-warning" type="button">First Year Recruitment</button></a>
-            </li> -->
+            <li class="nav-item kk" >
+              <a class="nav-link " aria-current="page"><button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Shaam-E-Virasat</button></a>
+            </li>
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+            </button> -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./">Home</a>
             </li>
@@ -99,8 +103,39 @@
         </div>
       </div>
     </nav>
-
-
+    <!-- <div class="modal" tabindex="-1" style="margin-top: 30px;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://imagizer.imageshack.com/img922/425/cd6yxN.png" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://imagizer.imageshack.com/img922/425/cd6yxN.png" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #FFC107; border: #FFC107; color: black;" >Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- ***** Main video Area Start ***** -->
   <section class="section main-banner" id="home" data-section="section1">
       <video autoplay muted loop id="bg-video">
@@ -158,6 +193,9 @@
       </div>
     </div>
   </section>
+
+
+
 <!-- ***** events ***** -->
   <section class="upcoming-meetings" id="events">
     <div class="container">
@@ -434,6 +472,12 @@
 
 
   <script>
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
     const countE1 = document.getElementById("count");
     countvisits();
     function countvisits(){
