@@ -1,64 +1,23 @@
-
-if ($(".new-swiper-container").hasClass("new-team-member-slider")) {
-    var swiper = new Swiper('.new-swiper-container', {
-        slidesPerView: 2,
-        allowTouchMove: true,
-        loop: false,
-        centeredSlides: false,
-        slideToClickedSlide: true,
-        effect: "coverflow",
-        grabCursor: true,
-        autoplay: false,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        coverflow: {
-            rotate: 0,
-            stretch: 100,
-            depth: 200,
-            modifier: 1,
-            slideShadows: false
-        },
-        breakpoints: {
-            // when window width is <= 768px
-            767: {
-                slidesPerView: 1,
-                centeredSlides: false,
-                effect: "slide",
-            }
-        }
+(function ($) {
+    $(function () {
+  
+      $('.navbar ul li a:not(:only-child)').click(function (e) {
+        $(this).siblings('.nav-dropdown').toggle();
+        $('.nav-dropdown').not($(this).siblings()).hide();
+        e.stopPropagation();
+      });
+  
+      $('html').click(function () {
+        $('.nav-dropdown').hide();
+      });
+  
+      $('#nav-toggle').click(function () {
+        $('.navbar ul').slideToggle();
+      });
+  
+      $('#nav-toggle').on('click', function () {
+        this.classList.toggle('active');
+      });
+  
     });
-    }
-
-if ($(".swiper-container").hasClass("team-member-slider")) {
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        allowTouchMove: true,
-        loop: true,
-        centeredSlides: true,
-        slideToClickedSlide: true,
-        effect: "coverflow",
-        grabCursor: true,
-        autoplay: false,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        coverflow: {
-            rotate: 0,
-            stretch: 100,
-            depth: 200,
-            modifier: 1,
-            slideShadows: false
-        },
-        breakpoints: {
-            // when window width is <= 768px
-            767: {
-                slidesPerView: 1,
-                centeredSlides: false,
-                effect: "slide",
-            }
-        }
-    });
-    }
+  })(jQuery);

@@ -2,1681 +2,1062 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>VIRSA</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-  <link href="static/heads/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="static/heads/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Edu+NSW+ACT+Foundation&family=Edu+SA+Beginner:wght@500&family=Pacifico&family=Tinos:ital@1&display=swap" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
-
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Open+Sans:wght@300&family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 </head>
 
 <body>
 
-  <nav id="p2" class="navbar navbar-expand-lg navbar-dark  sticky-top">
-    <div class="container-fluid">
-      <a href="/" class="logo">
-        <img style="width: 120px;" src="https://imagizer.imageshack.com/img923/9454/BUTnYN.png">
-      </a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <!-- <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="http://recruitment.ssavirsa.com/"><button class="btn btn-warning" type="button">First Year Recruitment</button></a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="main.html">Events</a>
-          </li>
-          <li class="nav-item ">
-            <!-- <li class="nav-item">
-                  <a class="nav-link" href="#">TEAM</a>
-                </li> -->
-          <li class="nav-item dropdown active ">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Team
-            </a>
-            <ul class="dropdown-menu bg-black  ">
-              <li><a class="dropdown-item text-white active" href="heads.html">HEADS</a></li>
-              <li><a class="dropdown-item text-white " href="core.html">CORE</a></li>
+  <!-- NAVBAR  -->
 
-
+  <header>
+    <div class="navigation-bar-container">
+        <div class="nav-container" style="justify-content: right;">
+          <div class="logo-container">
+            <img style="width: 120px;" loading="lazy" src="https://imagizer.imageshack.com/img923/9454/BUTnYN.png">
+          </div>
+          <div class="navbar" style="padding-right: 7px;">
+            <div class="nav-mobile">
+              <a href="#" id="nav-toggle"><span></span></a>
+            </div>
+            <ul class="nav-list">
+              <li  class="demo" ><a href="/">Home</a></li>
+              <li class="demo"><a href="gallery.html">Gallery</a></li>
+              <li  class="demo"><a href="main.html">Events</a></li>
+              <li>
+                <a href="#">Team<i class="fa fa-caret-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li  class="demo"><a href="heads.html">Head</a></li>
+                  <li  class="demo"><a href="core.html">Core</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
+          </div>
+        </div>
+      </div>
+       </header>
 
-          </li>
-        </ul>
+  <!-- NAVBAR  -->
+
+<div class="boddy">
 
 
+  <div class="dark">
+    <div class="DepartmentHeading" style="text-align: center; ">
+      <p>General Secretary</p>
+    </div>
+  
+<section class="gens">
+  <article class="card1">
+    <img
+      class="card__background"
+      src="https://imagizer.imageshack.com/img924/6193/aUSU66.jpg"
+     
+      width="1920"
+      height="2193"
+    />
+    <div class="card__content | flow">
+      <div class="card__content--container | flow">
+        <h2 class="card__title">Gurpratap Singh</h2>
+        <p class="card__description">
+          <div class="linkss" style="display: flex;justify-content: space-around;
+          align-items: center;" >
+          <i class="fa fa-linkedin" aria-hidden="true"
+          style="font-size: 24px; color: white"></i>
+          <i class="fa fa-github" aria-hidden="true"
+          style="font-size: 24px; color: white"></i>
+          <i class="fa fa-instagram" aria-hidden="true"
+          style="font-size: 24px; color: white"></i>
+        </div>
+        </p>
+      </div>
+      
+    </div>
+  </article>
+  <article class="card1">
+    <img
+      class="card__background"
+      src="https://imagizer.imageshack.com/img924/5694/GPGXhP.jpg"
+     
+      width="1920"
+      height="2193"
+    />
+    <div class="card__content | flow">
+      <div class="card__content--container | flow">
+        <h2 class="card__title">Parampreet Kaur</h2>
+        <p class="card__description">
+          <div class="linkss" style="display: flex;justify-content: space-around;
+          align-items: center;" >
+          <i class="fa fa-linkedin" aria-hidden="true"
+          style="font-size: 24px; color: white"></i>
+          <i class="fa fa-github" aria-hidden="true"
+          style="font-size: 24px; color: white"></i>
+          <i class="fa fa-instagram" aria-hidden="true"
+          style="font-size: 24px; color: white"></i>
+        </div>
+        </p>
+      </div>
+     
+    </div>
+  </article>
+</section>
+
+
+
+    <!-- main part  -->
+    <div class="flex-container3">
+      <div id="app" class="container">
+        <!-- Convenor -->
+
+        <div style="
+              display: flex;
+              width: 100%;
+              justify-content: center;
+              margin-bottom: 50px;
+              flex-direction: column;
+              align-items: center; 
+              text-align: center;
+            ">
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Convenor</p>
+          </div style="display: flex; justify-content: center; flex-direction: row; flex-wrap: wrapi;">
+          <card data-image="https://imagizer.imageshack.com/img923/4076/j4brE6.jpg" loading="lazy">
+            <h1 slot="header">Gagan Goyal</h1>
+            <br />
+         
+              <!-- <p slot="content">Convenor</p> -->
+              <div id='facebook-icon'></div>
+              <!-- <p slot="content">hey is teh ihihkrrgg</p>
+            -->
+            
+
+            <ul slot="content" class="social-links">
+              <ul style="--i: 1; margin-right: 10px">
+                <a href="https://instagram.com/gagangoyal2003?igshid=YmMyMTA2M2Y;">
+                 <i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i>
+                </a>
+              </ul>
+              <ul style="--i: 2; margin-right: 10px">
+                <a href="https://github.com/GaganGoyal2003">
+                  <i class="fa fa-github" aria-hidden="true"
+                  style="font-size: 24px; color: white"></i>
+                </a>
+              </ul>
+              <ul style="--i: 3; margin-right: 10px">
+                <a href="https://www.linkedin.com/in/gagan-goyal-48a077253">
+                  <i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i>
+                </a>
+              </ul>
+            </ul>
+          </card>
+        </div>
+        <!-- content -->
+        <div class="cardover">
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Content</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards -->
+          <div class="carddesign">
+
+            <card data-image="https://imageshack.com/i/pnodt9gXj" loading="lazy">
+              <h1 slot="header">Kirtveer Kaur Kharoud</h1>
+              <!-- <p slot="content">Content</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1; margin-right: 10px">
+                  <a href="https://www.instagram.com/Kirtveer_kharoud/">
+                   <i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i>
+                  </a>
+                </ul>
+                <ul style="--i: 3; margin-right: 10px">
+                  <a href="https://www.linkedin.com/in/kirtveer-kaur-kharoud-992ba3212">
+                    <i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i>
+                  </a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imageshack.com/i/pmiX9cLij" loading="lazy">
+              <h1 slot="header">Avnoor Kaur</h1>
+              <!-- <p slot="content">Content</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1; margin-right: 10px">
+                  <a href="https://www.instagram.com/Noor.kaur230/">
+                   <i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i>
+                  </a>
+                </ul>
+              </ul>
+            </card>
+          </div>
+        </div>
+        <!-- cards -->
+       
+        
+       
+        <!-- Technical -->
+        <div class="cardover">
+
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Technical</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards  -->
+
+          <div class="carddesign">
+
+            <card data-image="https://imagizer.imageshack.com/img922/6551/Ua4Byf.jpg" loading="lazy">
+              <h1 slot="header">Chandan Kwatra</h1>
+              <!-- <p slot="content">Technical</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://www.instagram.com/chandan_.123/">
+                   <i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i>
+                  </a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="https://github.com/Chandankawatra123">
+                     <i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i>
+                  </a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imageshack.com/i/poDnV54rj" loading="lazy">
+              <h1 slot="header">Manvir Kaur</h1>
+              <!-- <p slot="content">Technical</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://www.instagram.com/manvirkaur_19/">
+                   <i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i>
+                  </a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="https://github.com/manvir19">
+                     <i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i>
+                  </a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="https://www.linkedin.com/in/manvir-kaur-3a5a4b232">
+                    <i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i>
+                  </a>
+                </ul>
+              </ul>
+            </card>
+          </div>
+        </div>
+
+        <!-- cards  -->
+
+
+
+        <!-- Creativity -->
+        <div class="cardover">
+
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Creativity</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards -->
+          <div class="carddesign">
+
+            <card data-image="https://imageshack.com/i/pnvtjJEAj" loading="lazy">
+              <h1 slot="header">Anjanii Mohil</h1>
+              <!-- <p slot="content">Creativity</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="http://instagram.com/anjaniimohil"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="https://github.com/anjaanii"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="https://www.linkedin.com/in/anjanii-mohil-38280a227/"> <i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imageshack.com/i/pneZQsxOj"loading="lazy">
+              <h1 slot="header">Jaideep Singh</h1>
+              <!-- <p slot="content">Creativity</p> -->
+              <br>
+              <br>
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imageshack.com/i/po1xnCTrj"loading="lazy">
+              <h1 slot="header">Kashvi Malhotra</h1>
+              <!-- <p slot="content">Creativity</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"> <i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imageshack.com/i/poohKOlDj"loading="lazy">
+              <h1 slot="header">Parasinder Singh</h1>
+              <!-- <p slot="content">Creativity</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://www.instagram.com/_paras_toor/"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+          </div>
+        </div>
+        <!-- cards -->
+
+
+        <!-- Cultural -->
+        <div class="cardover">
+
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Cultural</p>
+          </div>
+          <!-- Department Heading  -->
+
+
+          <!-- cards  -->
+          <div class="carddesign">
+
+            <card data-image="https://imageshack.com/i/pnwXkYjAj" loading="lazy">
+              <h1 slot="header">Armaan Singh</h1>
+              <!-- <p slot="content">Cultural</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imageshack.com/i/pnj0ZZ7Rj"loading="lazy">
+              <h1 slot="header">Aastha Verma</h1>
+              <!-- <p slot="content">Cultural</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://instagram.com/iam_aasthaverma"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="https://github.com/vermaaastha"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="https://linkedin.com/in/aastha-verma"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+
+            <card data-image="https://imageshack.com/i/pm796gaej"loading="lazy">
+              <h1 slot="header">Naman Garg</h1>
+              <!-- <p slot="content">Cultural</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+          </div>
+        </div>
+        <!-- cards -->
+
+        <!-- design -->
+        <div class="cardover">
+
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Design</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards  -->
+          <div class="carddesign">
+
+            <card data-image="https://imagizer.imageshack.com/img923/4058/wAzfyI.jpg"loading="lazy">
+              <h1 slot="header">Palak</h1>
+              <!-- <p slot="content">Design</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://instagram.com/palak__.garg?igshid=NmQ2ZmYxZjA="><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="https://github.com/palakga-rg"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="https://www.linkedin.com/in/palak-garg-5862a3223/"> <i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card
+              data-image="https://imagizer.imageshack.com/img922/6663/PrEbHT.jpg"loading="lazy">
+              <h1 slot="header">Kushagre</h1>
+              <!-- <p slot="content">Design</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+
+          </div>
+        </div>
+        <!-- cards  -->
+
+        <!-- Media -->
+        <div class="cardover">
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Media</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards  -->
+          <div class="carddesign">
+
+            <card data-image="https://imageshack.com/i/pndlqI13j"loading="lazy">
+              <h1 slot="header">Ashmandeep Singh Joshan</h1>
+              <!-- <p slot="content">Media</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://instagram.com/ashman_423?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="https://github.com/AshmanMusaafir"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="https://www.linkedin.com/in/ashman-singh-a9a613226"> <i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imagizer.imageshack.com/img922/4742/BE6eAD.jpg" loading="lazy">
+              <h1 slot="header">Pushkal Devgan</h1>
+              <!-- <p slot="content">Media</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://www.instagram.com/devgan2003/"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="https://www.linkedin.com/in/pushkal-devgan-74a2501b7"> <i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+
+          </div>
+        </div>
+        <!-- cards  -->
+
+        <!-- Discipline -->
+        <div class="cardover">
+
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Discipline</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards  -->
+          <div class="carddesign">
+
+            <card data-image="https://imageshack.com/i/pmhmcCjEj" loading="lazy">
+              <h1 slot="header">Manvir Singh</h1>
+              <p slot="content">Discipline</p>
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imagizer.imageshack.com/img922/9530/1Dy0SV.jpg" loading="lazy">
+              <h1 slot="header">Divyajot Kaur</h1>
+              <!-- <p slot="content">Discipline</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://www.instagram.com/divyajotsapra/"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="https://github.com/Divyajot70"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="https://www.linkedin.com/in/divyajot-sapra"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imageshack.com/i/pnmXyJNgj" loading="lazy">
+              <h1 slot="header">Krish Singla</h1>
+              <!-- <p slot="content">Discipline</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+
+          </div>
+        </div>
+        <!-- cards  -->
+
+
+        <!-- Documentation -->
+        <div class="cardover">
+
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Documentation</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards  -->
+          <div class="carddesign">
+
+            <card data-image="https://imageshack.com/i/pmtbFv0Pj" loading="lazy">
+              <h1 slot="header">Pradeep Kumar</h1>
+              <!-- <p slot="content">Documentation</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://instagram.com/iam_ps?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="https://www.linkedin.com/in/pradeepsinghal"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+
+          </div>
+        </div>
+        <!-- cards  -->
+
+
+        <!-- Finance -->
+        <div class="cardover">
+
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Finance</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards  -->
+          <div class="carddesign">
+
+            <card data-image="https://imageshack.com/i/ponuFO3Cj"loading="lazy">
+              <h1 slot="header">Ajayvir Singh</h1>
+              <!-- <p slot="content">Finance</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imageshack.com/i/pmv9bgKuj"loading="lazy">
+              <h1 slot="header">Udit Munjal</h1>
+              <!-- <p slot="content">Finance</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+
+          </div>
+        </div>
+        <!-- cards  -->
+
+
+        <!-- Gurpuarb -->
+        <div class="cardover">
+
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Gurpurab</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards  -->
+          <div class="carddesign">
+
+            <card data-image="https://imagizer.imageshack.com/img922/9595/r4RsXr.jpg"loading="lazy">
+              <h1 slot="header">Gurpreet Singh</h1>
+              <!-- <p slot="content">Gurpurab</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://www.instagram.com/gurpreet_singh_2021"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="https://www.linkedin.com/in/gurpreet-singh-b89088253"> <i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imagizer.imageshack.com/img923/9174/1kpZQD.jpg"loading="lazy">
+              <h1 slot="header">Rajvir Singh</h1>
+              <!-- <p slot="content">Gurpurab</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+
+          </div>
+        </div>
+        <!-- cards  -->
+
+
+        <!-- Hospitality -->
+        <div class="cardover">
+
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Hospitality</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards  -->
+          <div class="carddesign">
+
+            <card data-image="https://imagizer.imageshack.com/img924/3444/j601HI.jpg"loading="lazy">
+              <h1 slot="header">Bowneetpal Singh</h1>
+              <!-- <p slot="content">Hospitality</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://www.instagram.com/bowneet_pal_singh/"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="https://www.linkedin.com/in/bowneet-pal-singh-554491250"> <i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imageshack.com/i/pmF9qa8Cj"loading="lazy">
+              <h1 slot="header">Simroop Kaur</h1>
+              <!-- <p slot="content">Hospitality</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+
+          </div>
+        </div>
+        <!-- cards  -->
+
+
+        <!-- Marketing -->
+        <div class="cardover">
+
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Marketing</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards  -->
+          <div class="carddesign">
+
+            <card data-image="https://imagizer.imageshack.com/img922/8949/cGE9MR.jpg"loading="lazy">
+              <h1 slot="header">Piyush Singla</h1>
+              <!-- <p slot="content">Marketing</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imageshack.com/i/potYez5Vj"loading="lazy">
+              <h1 slot="header">Vishvjeet Singh</h1>
+              <!-- <p slot="content">Marketing</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imagizer.imageshack.com/img923/9975/nu64gq.jpg"loading="lazy">
+              <h1 slot="header">Ravnish Gupta</h1>
+              <!-- <p slot="content">Marketing</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+
+          </div>
+        </div>
+        <!-- cards  -->
+
+
+        <!-- Publicity -->
+        <div class="cardover">
+
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Publicity</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards  -->
+
+          <div class="carddesign">
+
+            <card data-image="https://imageshack.com/i/pnI5BnKrj"loading="lazy">
+              <h1 slot="header">Sarabdeep Singh</h1>
+              <!-- <p slot="content">Publicity</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://www.instagram.com/sarab03_/"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="https://www.linkedin.com/in/sarabdeep-singh-266984217"> <i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imagizer.imageshack.com/img924/5788/p4LReq.jpg"loading="lazy">
+              <h1 slot="header">Chahat</h1>
+              <!-- <p slot="content">Publicity</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+
+          </div>
+        </div>
+        <!-- cards  -->
+
+
+        <!-- Public Relations -->
+        <div class="cardover">
+
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center;">
+            <p>Public Relations</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards -->
+          <div class="carddesign">
+
+            <card data-image="https://imageshack.com/i/pm9kR5HPj"loading="lazy">
+              <h1 slot="header">Japjot Singh</h1>
+              <!-- <p slot="content">Public Relations</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imageshack.com/i/pmMtJunGj"loading="lazy">
+              <h1 slot="header">Sunidhi Goyal</h1>
+              <!-- <p slot="content">Public Relations</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+
+          </div>
+        </div>
+        <!-- cards -->
+
+
+        <!-- Logistics -->
+        <div class="cardover">
+          <!-- Department Heading  -->
+          <div class="DepartmentHeading" style="text-align: center; ">
+            <p>Logistics</p>
+          </div>
+          <!-- Department Heading  -->
+
+          <!-- cards  -->
+          <div class="carddesign">
+
+            <card data-image="https://imageshack.com/i/pmar0GXTj"loading="lazy">
+              <h1 slot="header">Amiteshwar Singh Sidhu</h1>
+              <!-- <p slot="content">Logistics</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="https://www.instagram.com/amiteshwar.51/"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+            <card data-image="https://imageshack.com/i/poJGhXI3p"loading="lazy">
+              <h1 slot="header">Hargunpreet Singh</h1>
+              <!-- <p slot="content">Logistics</p> -->
+              <ul slot="content" class="social-links">
+                <ul style="--i: 1">
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 2">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"
+                    style="font-size: 24px; color: white"></i></a>
+                </ul>
+                <ul style="--i: 3">
+                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                      style="font-size: 24px; color: white"></i></a>
+                </ul>
+              </ul>
+            </card>
+
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-
-  <div class="pc-only">
-
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> GENERAL SECRETARY</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="new-swiper-container new-team-member-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/IBklMtx.jpg?1" alt="Armaan" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://www.instagram.com/_ekroopkaur_/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.linkedin.com/in/ekroop-kaur-8905a122a"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-              
-
-                    
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Ekroop Kaur</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://i.imgur.com/M9Tf1sn.jpg?1" alt="ivneet" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/taman_jit?igshid=YmMyMTA2M2Y="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="https://in.linkedin.com/in/tamanjit-singh-b99348210"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Tamanjit Singh</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <!-- <div class="swiper-button-next slider-arrows"><i class="ti ti-angle-right"></i> </div>
-                    <div class="swiper-button-prev slider-arrows"><i class="ti ti-angle-left"></i> </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
   </div>
+    <!-- cards  -->
 
-  <div class="phone-only">
-
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> GENERAL SECRETARY</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="swiper-container team-member-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/IBklMtx.jpg?1" alt="Armaan" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://www.instagram.com/_ekroopkaur_/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.linkedin.com/in/ekroop-kaur-8905a122a"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Ekroop Kaur</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://i.imgur.com/M9Tf1sn.jpg?1" alt="ivneet" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/taman_jit?igshid=YmMyMTA2M2Y="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="https://in.linkedin.com/in/tamanjit-singh-b99348210"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Tamanjit Singh</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <!-- <div class="swiper-button-next slider-arrows"><i class="ti ti-angle-right"></i> </div>
-                    <div class="swiper-button-prev slider-arrows"><i class="ti ti-angle-left"></i> </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </div>
-
-  <!-- <div class="phone-only">
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> GENERAL SECRETARY</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="swiper-container team-member-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/IBklMtx.jpg?1" alt="ekroop" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/_ekroopkaur_?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.linkedin.com/in/ekroop-kaur-8905a122a"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Ekroop Kaur</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"></p>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://i.imgur.com/M9Tf1sn.jpg?1" alt="tamanjit" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/taman_jit?igshid=YmMyMTA2M2Y="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="https://in.linkedin.com/in/tamanjit-singh-b99348210"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Tamanjit Singh</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-
-                 <div class="swiper-button-next slider-arrows"><i class="ti ti-angle-right"></i> </div>
-                          <div class="swiper-button-prev slider-arrows"><i class="ti ti-angle-left"></i> </div> -->
-              <!-- </div>
-            </div>
-          </div>
-        </div>
+    <!-- FOOTER  -->
+    <div class="footer">
+      <div class="social-media content">
+        <a data-aos="zoom-in" class="btn btn-lg" style="background-color: transparent; color: white; font-size: 35px" href="https://www.facebook.com/VirsaTIET/" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a data-aos="zoom-in" class="btn" style="background-color: transparent; color: white; font-size: 35px" href="https://www.instagram.com/virsa.thapar" role="button"><i class="fab fa-instagram"></i></a>
+        <a data-aos="zoom-in" class="btn" style="background-color: transparent; color: white; font-size: 35px" href="https://www.linkedin.com/company/ssa-virsa/" role="button"><i class="fab fa-linkedin-in"></i></a>
       </div>
-    </section>
-  </div>
-  <div class="pc-only">
-
-    <section class="team">
-
-      <div class="container">
-        <div class="row">  -->
-
-          <!-- <div class="col-md-12"> -->
-            <!-- <h2> GENERAL SECRETARY</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="hoverrr"> -->
-
-            <!-- <div class="new-swiper-container new-team-member-slider"> -->
-              <!-- <div class="swiper-wrapper"> -->
-                <!-- <div class="swiper-slide"> -->
-                  <!-- <div class="team-coverflow1">
-                    <div class="team-coverflow">
-
-                      <div class="team-img">
-                        <img src="https://i.imgur.com/IBklMtx.jpg?1" alt="ekroop" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/_ekroopkaur_?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/ekroop-kaur-8905a122a"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-  
-                      <div class="team-text">
-                        <br>
-                        <h4 class="color-black font-weight-normal m-0 text-capitalize">Ekroop Kaur</h4>
-                        <p class="color-light-grey font-weight-light designation text-capitalize"></p>
-                      </div>
-  
-                    </div>
-             
-            </div> -->
-            <!-- <div class="team-coverflow2">
-              <div class="team-coverflow">
-                <div class="team-data-img">
-                  <div class="team-img">
-                    <img src="https://i.imgur.com/M9Tf1sn.jpg?1" alt="tamanjit" data-no-retina>
-                    <div class="team-box-content">
-                      <ul class="team-social white-bg">
-                        <li><a href="https://instagram.com/taman_jit?igshid=YmMyMTA2M2Y="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="https://in.linkedin.com/in/tamanjit-singh-b99348210"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="team-text">
-                  <br>
-                  <h4 class="color-black font-weight-normal m-0 text-capitalize">Tamanjit Singh</h4>
-                  <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                </div>
-
-              </div>
-                </div>
-              </div>
-              </div>
-            </div>
-            </div>
-
-        </div>
-    </section>
-  </div> -->
-   
- 
-  <section class="team">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2> OVERALL STUDENT CO-ORDINATOR & EVENT CO-ORDINATOR</h2>
-        </div>
-      </div>
-      <br>
-      <div class="row text-center">
-        <div class="col-md-12">
-          <div class="swiper-container team-member-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-
-                  <div class="team-img">
-                    <img src="https://i.imgur.com/SDX932p.jpg" alt="gurpartap" data-no-retina>
-                    <div class="team-box-content">
-                      <ul class="team-social white-bg">
-                        <!-- <li><a href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Gurpartap Singh</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> OSC </p>
-                  </div>
-
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/Klgo73T.jpg" alt="parampreet" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/prmprtk?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Parampreet Kaur</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> OEC </p>
-                  </div>
-
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/zEOiFYd.jpg" alt="tarik" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <!-- <li><a href=""><i class="ti-instagram" aria-hidden="true"></i></a></li> -->
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li> -->
-                          <li><a href="https://github.com/Tarik-Bhateja"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADjY9nsB3q60gtckSWPVA8HfctG1zrQ-Y5Y&keywords=tarik%20bhateja&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=489adf29-61f3-4638-9cb1-2608ab16b9d2&sid=VI2"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Tarik Bhateja</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> OEC </p>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-  <div class="pc-only">
-
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> CONTENT</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="new-swiper-container new-team-member-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/woq6Lj1.jpg" alt="Armaan" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/armanndhaliwal?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li> -->
-                          <!-- <li><a href=""><i class="ti-github" aria-hidden="true"></i></a></li> -->
-                          <!-- <li><a href=""><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-              
-
-                    
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Armaan Singh Dhaliwal</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://imageshack.com/i/poCvG0Orj" alt="ivneet" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/ivneetkaurrr?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Ivneet Kaur</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <!-- <div class="swiper-button-next slider-arrows"><i class="ti ti-angle-right"></i> </div>
-                    <div class="swiper-button-prev slider-arrows"><i class="ti ti-angle-left"></i> </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </div>
-
-  <div class="phone-only">
-
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> CONTENT</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="swiper-container team-member-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/woq6Lj1.jpg" alt="Armaan" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/armanndhaliwal?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Armaan Singh Dhaliwal</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://imageshack.com/i/poCvG0Orj" alt="ivneet" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/ivneetkaurrr?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Ivneet Kaur</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <!-- <div class="swiper-button-next slider-arrows"><i class="ti ti-angle-right"></i> </div>
-                    <div class="swiper-button-prev slider-arrows"><i class="ti ti-angle-left"></i> </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </div>
-  <section class="team">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2> DESIGN AND MEDIA</h2>
-        </div>
-      </div>
-      <br>
-      <div class="row text-center">
-        <div class="col-md-12">
-          <div class="swiper-container team-member-slider">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/NrcuQIJ.jpg" alt="anoop" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/anoopkaurrrr?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Anoop Kaur</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/QyDXUid.png" alt="martin" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/i.kaushalmartin?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li> -->
-                          <li><a href="https://github.com/ikaushalmartin"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.linkedin.com/in/martin-kaushal-7689761bb/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Martin Kaushal</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/KZnJPES.jpg" alt="samar" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/sainisamar_sss?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <li><a href="Linkedin.com/in/samarsaini/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Samarjot Singh Saini</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-  <section class="team">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2> TECHNICAL & LOGISTICS</h2>
-        </div>
-      </div>
-      <br>
-      <div class="row text-center">
-        <div class="col-md-12">
-          <div class="swiper-container team-member-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/xVDqiHF.jpg" alt="harjas" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/__harjas___?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <li><a href="https://github.com/harjasdt"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.linkedin.com/in/harjaspreet-singh-4800881b5/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Harjaspreet Singh</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> Technical </p>
-                  </div>
-
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-
-                  <div class="team-img">
-                    <img src="https://i.imgur.com/JelJsD2.jpg" alt="madhvan" data-no-retina>
-                    <div class="team-box-content">
-                      <ul class="team-social white-bg">
-                        <li><a href="https://instagram.com/madhvanjindal?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                        <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Madhvan Jindal</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize">Logistics </p>
-                  </div>
-
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/QyDXUid.png" alt="martin" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/i.kaushalmartin?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li> -->
-                          <li><a href="https://github.com/ikaushalmartin"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.linkedin.com/in/martin-kaushal-7689761bb/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                          <!-- <a href=""><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Martin Kaushal</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> Technical </p>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-  <div class="pc-only">
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> DOCUMENTATION & FINANCE</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="new-swiper-container new-team-member-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/KDBQVNq.jpg" alt="muskan" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/_.muskaaaaaan?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Muskanpreet Kaur</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> Documentation </p>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://i.imgur.com/fYUD0ze.jpg?1" alt="yuvraj" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/yuvraj_0204?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Yuvraj Singh</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> Finance </p>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </div>
-  <div class="phone-only">
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> DOCUMENTATION & FINANCE</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="swiper-container team-member-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/KDBQVNq.jpg" alt="muskan" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/_.muskaaaaaan?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Muskanpreet Kaur</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> Documentation </p>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://i.imgur.com/fYUD0ze.jpg?1" alt="yuvraj" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/yuvraj_0204?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Yuvraj Singh</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> Finance </p>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </div>
-  <section class="team">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2> CULTURAL</h2>
-        </div>
-      </div>
-      <br>
-      <div class="row text-center">
-        <div class="col-md-12">
-          <div class="swiper-container team-member-slider">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/4R8SpBf.jpg" alt="anhadvir" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/_._anhad_._?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-
-                          <li><a href="https://www.linkedin.com/in/anhadvir-singh-461619250"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Anhadvir Singh</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/GmyP7gg.jpg" alt="jasmine" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/jasmine_ramgaria?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Jasmine Kaur</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/fkLCAQ7.jpg" alt="tisha" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/tishaaaa1?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.linkedin.com/in/tisha-676482222/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Tisha </h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- <div class="swiper-button-next slider-arrows"><i class="ti ti-angle-right"></i> </div>
-                    <div class="swiper-button-prev slider-arrows"><i class="ti ti-angle-left"></i> </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section class="team">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2> CREATIVITY</h2>
-        </div>
-      </div>
-      <br>
-      <div class="row text-center">
-        <div class="col-md-12">
-          <div class="swiper-container team-member-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/IkmANB8.jpg" alt="nimrat" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/nimrat._randhawa?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Nimrat Kaur Randhawa</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/Csa2dxu.jpg" alt="himmat" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/himmatdhaliwal362?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Himmat Amolak Singh Dhaliwal</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-
-                  <div class="team-img">
-                    <img src="https://i.imgur.com/HlrGUod.jpg" alt="anshika" data-no-retina>
-                    <div class="team-box-content">
-                      <ul class="team-social white-bg">
-                        <li><a href="https://instagram.com/anshika._.bansal?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                        <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Anshika Bansal</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/Of3fEbK.jpg" alt="keshav" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/keshav_nuniwal?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Keshav Nuniwal</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-  <!-- <div class="pc-only">
-
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> MARKETING</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="new-swiper-container new-team-member-slider">
-              <div class="swiper-wrapper"> -->
-                <!-- <div class="swiper-slide">
-                  <div class="team-coverflow">
-
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/g4kdeXM.jpg" alt="Armaan" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/rohann_.xs?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Rohan Sachdeva</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div> -->
-                <!-- <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://i.imgur.com/0ZzfmRK.jpg" alt="ivneet" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/heymaninder?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Maninderpal Singh</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div> -->
-
-              <!-- </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </div> -->
-  <!-- <div class="phone-only">
-
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> MARKETING</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="swiper-container team-member-slider">
-              <div class="swiper-wrapper"> -->
-                <!-- <div class="swiper-slide">
-                  <div class="team-coverflow"> -->
-
-                    <!-- <div class="team-img">
-                      <img src="https://i.imgur.com/g4kdeXM.jpg" alt="Armaan" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/heymaninder?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                         
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Rohan Sachdeva</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div> -->
-                <!-- <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://i.imgur.com/0ZzfmRK.jpg" alt="ivneet" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/rohann_.xs?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                   
-                          </ul>
-                        </div>
-                      </div>
-                    </div> -->
-                    <!-- <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Maninderpal Singh</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div> -->
-
-                  <!-- </div>
-                </div> -->
-
-                <!-- <div class="swiper-button-next slider-arrows"><i class="ti ti-angle-right"></i> </div>
-                    <div class="swiper-button-prev slider-arrows"><i class="ti ti-angle-left"></i> </div> -->
-              <!-- </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </div> -->
-  <div class="pc-only">
-
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> PUBLICITY</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="new-swiper-container new-team-member-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/7HUFZEx.jpg" alt="Armaan" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/arjunlamba_777?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Arjun Lamba</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://imageshack.com/i/ponCxu2uj" alt="ivneet" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/shagun_za_23?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Shagun Vohra</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <!-- <div class="swiper-button-next slider-arrows"><i class="ti ti-angle-right"></i> </div>
-                    <div class="swiper-button-prev slider-arrows"><i class="ti ti-angle-left"></i> </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </div>
-  <div class="phone-only">
-
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> PUBLICITY</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="swiper-container team-member-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/7HUFZEx.jpg" alt="Armaan" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/arjunlamba_777?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Arjun Lamba</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://imageshack.com/i/ponCxu2uj" alt="ivneet" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/shagun_za_23?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Shagun Vohra</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <!-- <div class="swiper-button-next slider-arrows"><i class="ti ti-angle-right"></i> </div>
-                    <div class="swiper-button-prev slider-arrows"><i class="ti ti-angle-left"></i> </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </div>
-
-  <div class="pc-only">
-
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>DISCIPLINE & HOSPITALITY</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="new-swiper-container new-team-member-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/dyIU29Z.png" alt="Armaan" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/_.jaskirat_?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Jaskirat Singh</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize">Discipline </p>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://i.imgur.com/1fG1Qag.jpg" alt="ivneet" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/eshitaarora?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Eshita Arora</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize">Hospitality </p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <!-- <div class="swiper-button-next slider-arrows"><i class="ti ti-angle-right"></i> </div>
-                    <div class="swiper-button-prev slider-arrows"><i class="ti ti-angle-left"></i> </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </div>
-  <div class="phone-only">
-
-    <section class="team">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2> DISCIPLINE & HOSPITALITY</h2>
-          </div>
-        </div>
-        <br>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <div class="swiper-container team-member-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/dyIU29Z.png" alt="Armaan" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/_.jaskirat_?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Jaskirat Singh</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize">Discipline  </p>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="team-coverflow">
-                    <div class="team-data-img">
-                      <div class="team-img">
-                        <img src="https://i.imgur.com/1fG1Qag.jpg" alt="ivneet" data-no-retina>
-                        <div class="team-box-content">
-                          <ul class="team-social white-bg">
-                            <li><a href="https://instagram.com/eshitaarora?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="team-text">
-                      <br>
-                      <h4 class="color-black font-weight-normal m-0 text-capitalize">Eshita Arora</h4>
-                      <p class="color-light-grey font-weight-light designation text-capitalize">Hospitality</p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <!-- <div class="swiper-button-next slider-arrows"><i class="ti ti-angle-right"></i> </div>
-                    <div class="swiper-button-prev slider-arrows"><i class="ti ti-angle-left"></i> </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </div>
-  <section class="team">
-
-   
-<div class="pc-only">
-  <section class="team">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2> GURPURAB</h2>
-        </div>
-      </div>
-      <br>
-      <div class="row text-center">
-        <div class="col-md-12">
-          <div class="new-swiper-container new-team-member-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-
-                  <div class="team-img">
-                    <img src="https://i.imgur.com/848PvVE.jpg" alt="harjas" data-no-retina>
-                    <div class="team-box-content">
-                      <ul class="team-social white-bg">
-                        <li><a href="https://instagram.com/__harjas___?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <li><a href="https://github.com/harjasdt"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.linkedin.com/in/harjaspreet-singh-4800881b5/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Harjaspreet Singh</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/tiK8oQP.jpg" alt="amiteshwar" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/amiteshwar_chahal?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Amiteshwar Singh Chahal</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-</div>
-<div class="phone-only">
-  <section class="team">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2> GURPURAB</h2>
-        </div>
-      </div>
-      <br>
-      <div class="row text-center">
-        <div class="col-md-12">
-          <div class="swiper-container team-member-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-
-                  <div class="team-img">
-                    <img src="https://i.imgur.com/848PvVE.jpg" alt="harjas" data-no-retina>
-                    <div class="team-box-content">
-                      <ul class="team-social white-bg">
-                        <li><a href="https://instagram.com/__harjas___?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <li><a href="https://github.com/harjasdt"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.linkedin.com/in/harjaspreet-singh-4800881b5/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Harjaspreet Singh</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="team-coverflow">
-                  <div class="team-data-img">
-                    <div class="team-img">
-                      <img src="https://i.imgur.com/tiK8oQP.jpg" alt="amiteshwar" data-no-retina>
-                      <div class="team-box-content">
-                        <ul class="team-social white-bg">
-                          <li><a href="https://instagram.com/amiteshwar_chahal?igshid=NTdlMDg3MTY="><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                          <!-- <li><a href="#"><i class="ti ti-facebook" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                          <li><a href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li> -->
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team-text">
-                    <br>
-                    <h4 class="color-black font-weight-normal m-0 text-capitalize">Amiteshwar Singh Chahal</h4>
-                    <p class="color-light-grey font-weight-light designation text-capitalize"> </p>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-</div>
-
-  </div>
-  <hr class="h">
-  <div class="footer content">
-    <div class="social-media">
-      <a data-aos="zoom-in" class="btn btn-lg" style="background-color: transparent; color:white; font-size: 35px" href="https://www.facebook.com/VirsaTIET/" role="button"><i class="fa-brands fa-facebook-f"></i>
-        <a data-aos="zoom-in" class="btn" style="background-color: transparent; color:white; font-size: 35px " href="https://www.instagram.com/virsa.thapar" role="button">
-          <i class="fa-brands fa-instagram"></i>
-          <a data-aos="zoom-in" class="btn" style="background-color: transparent; color:white; font-size: 35px " href="https://www.linkedin.com/company/ssa-virsa/" role="button"><i class="fa-brands fa-linkedin-in"></i></a>
-    </div>
-    <br>
-    <p style="background-color: transparent; color:white ">Virsa © 2023
-      <br style="background-color: transparent; color:white ">Coded with ❤️ BY VIRSA TEAM
-    </p>
-  </div>
-
-  <script>
-    const countE1 = document.getElementById("count");
-    countvisits();
-    function countvisits(){
-      fetch('https://api.countapi.xyz/update/ssavirsa.com/virsa/?amount=1')
-      .then((res)=>res.json())
-      .then((res)=>{
-        countE1.innerHTML=res.value;
-
-      })
-    }
     
-   </script>
+      <p style="background-color: transparent; color: white; margin: 0;">Virsa © 2023</p>
+      <p style="background-color: transparent; color: white; margin: 0;">Coded with ❤ BY VIRSA TEAM</p>
+    </div>
+    
+    <!-- FOOTER  -->
 
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-  <script src="static/heads/script.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function () {
+        $("input").click(function () {
+          document.body.classList.toggle("dark");
+        });
+        $(".list").click(function () {
+          const value = $(this).attr("data-filter");
+          if (value == "all") {
+            $(".card").fadeIn(400);
+            $("li.list.active").removeClass("active");
+            $(this).addClass("active");
+          } else {
+            $("li.list.active").removeClass("active");
+            $(this).addClass("active");
+            $(".card")
+              .not("." + value)
+              .fadeOut(400);
+            $(".card")
+              .filter("." + value)
+              .fadeIn(400);
+          }
+        });
+      });
+    </script>
+    <script src="static\heads\Vue.js"></script>
+    <script src="static/heads/script.js"></script>
+  </div>
 </body>
 
 </html>
